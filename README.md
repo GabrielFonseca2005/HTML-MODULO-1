@@ -1,16 +1,9 @@
-# Trilha HTML - Dio.me
+# Trilha HTML - DIO.me
 ## Módulo 01 - Primeiros passos com HTML
 
-A ideia deste desafio é elaborar um website, utilizando uma estrutura bem básica, utilizando tags aprendidas durante as aulas práticas até então. 
+O projeto que desenvolvi utilizando o HTML utilizou como base o modelo disponibilizado pela DIO, entretanto, juntei as discussões sobre client e server de modo que ambas se apresentam dentro do segundo item do índice. Além disso, retirei o tópico específico para a explicação das listas e o inseri no decorrer da explicação sobre a estrutura básica do HTML.
+Consegui utilizar todas as tags principais que foram demonstradas no curso, assim como explorar outras funções e atributos, como o de "style", colocando cores diferentes para cada nível de título.
+Nas imagens, pude aplicar o atributo "width" e padronizei a largura das imagens usadas (200 e 400px).
+No decorrer da montagem deste HTML pude exercitar e me familiarizar mais com o uso dessa linguagem de marcação bem como do programa VSCode e a plataforma do GitHub. Dessa forma, consegui identificar alguns pontos a serem melhorados, como a velocidade e fluência com a montagem do HTML.
 
-Utilizar todas as tags explicadas nas aulas: `<h1>` até `<h6>`, `<p>`, `<mark>`, `<small>`, `<i>`, `<u>`, `<strong>`, `<ol>`, `<ul>`, `<li>`, `<a>`, `<hr>`, `<sub>`, `<sup>`, `<blockquote>`
-
-Utilizar novas tags sugeridas: `<font>`, `<del>`, `<p>`, `<abbr>` (a ideia é buscar estas tags na internet, entender como ela funciona e utilizar no texto)
-
-Importante dizer que, estas tags te "seguirão" durante TODO O CURSO, por isso, é bom que esteja bem aprendidas para aproveitarem ao máximo as próximas aulas.
-
-Este desafio vai fazer com que tenha dúvidas, o que é ótimo! Aos poucos você vai evoluindo na sua jornada.
-
-Após concluído este desafio! Siga para o <strong>Módulo II - Conceitos Básicos.</strong>
-
-Nos vemos lá!
+Espero que gostem!
