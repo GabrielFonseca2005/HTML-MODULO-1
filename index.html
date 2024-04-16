@@ -6,303 +6,455 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Módulo I - Primeiros Passos com HTML</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet">
 </head>
 
 <body>
-   <h1 id="inicio" style="color:orange">Módulo 1 - Primeiros Passos com HTML</h1>
-   <hr />
+   <font face="Ubuntu">
+      <h1 id="inicio" style="color:orange">Módulo 1 - Primeiros Passos com HTML</h1>
+      <hr />
+      <h2 style="color: green;">Índice</h2>
+   </font>
 
-   <h2 style="color: green;">Índice</h2>
-   <ul>
-      <li><a href="#historia-web">História da Web</a></li>
-      <li><a href="#clients-servers"><em>Clients vs Servers</em></a></li>
+   <font face="Cabin">
       <ul>
-         <li><a href="#clients">O que são <i>Clients</i>?</a></li>
-         <li><a href="#servers">O que são <i>Servers</i>?</a>
+         <li><a href="#historia-web">História da Web</a></li>
+         <li><a href="#clients-servers"><em>Clients vs Servers</em></a></li>
+         <ul>
+            <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+            <li><a href="#servers">O que são <i>Servers</i>?</a>
+         </ul>
+         <a href="#estrutura-html">Como é uma estrutura básica de um HTML?</a></li>
+         <li><a href="#referencias">Referências</a></li>
       </ul>
-      <a href="#estrutura-html">Como é uma estrutura básica de um HTML?</a></li>
-      <li><a href="#referencias">Referências</a></li>
-   </ul>
+   </font>
 
-   <h2 id="historia-web" style="color: coral">História da Web <sup><small><a href="#inicio">Voltar ao início</a></small></sup></h2>
-   <h3 style="color: darkolivegreen;">Computadores</h3>
-   <p>O primeiro <em>boom</em> tecnológico que ocasionou na criação dos primeiros computadores teve início a partir da
-      <strong>Segunda Grande Guerra Mundial</strong>.
-   </p>
-   <p>Dessa forma, podemos dividir a história dos computadores em:</p>
+   <font face="Ubuntu">
+      <h2 id="historia-web" style="color: coral">História da Web <sup><small><a href="#inicio">Voltar ao
+                  início</a></small></sup></h2>
+      <h3 style="color: darkolivegreen;">Computadores</h3>
+   </font>
 
-   <ul>
-      <li><strong>Primeira Geração (1940-1956):</strong></li>
-      <ul>
-         <li> Uso de válvulas e componentes mecânicos.</li>
-         <li><em><u>Exemplos:</em> ENIAC, Mark I e Colossus.</u></li>
-      </ul>
-      <br>
-      <li><strong>Segunda Geração (1956-1963):</strong></li>
-      <ul>
-         <li>Introdução do transistor;</li>
-         <li>Desenvolvimento da linguagem assembly.</li>
-         <li><u><em>Exemplos:</em>IBM 7090, IBM 1401.</u></li>
-      </ul>
-      <br>
-      <li><strong>Terceira Geração (1964-1971):</strong></li>
-      <ul>
-         <li>Surgimento dos circuitos integrados;</li>
-         <li>Desenvolvimento de sistemas operacionais.</li>
-         <li><u><em>Exemplos:</em> IBM System/360, DEC PDP-8.</u></li>
-      </ul>
-      <br>
-      <li><strong>Quarta Geração (1971-1989):</strong></li>
-      <ul>
-         <li>Introdução dos microprocessadores;</li>
-         <li>Surgimento dos computadores pessoais (PCs).</li>
-         <li><u><em>Exemplos:</em> IBM PC, Apple Macintosh.</u></li>
-      </ul>
-      <br>
-      <li><strong>Quinta Geração (1989-atualmente):</strong></li>
-      <ul>
-         <li>Avanços em inteligência artificial e processamento paralelo;</li>
-         <li>Surgimento da Internet e da <em>World Wide Web</em>;</li>
-         <li>Miniaturização contínua e dispositivos móveis;</li>
-         <li><u><em>Exemplos:</em> smartphones, supercomputadores.</u></li>
-      </ul>
-   </ul>
+   <font face="Cabin">
+      <p>O primeiro <em>boom</em> tecnológico que ocasionou na criação dos primeiros computadores teve início a partir
+         da
+         <strong>Segunda Grande Guerra Mundial</strong>.
+      </p>
+      <p>Dessa forma, podemos dividir a história dos computadores em:</p>
 
-   <h3 style="color: darkolivegreen;">Internet</h3>
-   <p>Os telégrafos, que surgiram no século XIX, marcaram o início da comunicação instantânea à distância, transmitindo
-      mensagens em <mark>código Morse</mark> através de fios elétricos.</p>
-   <p>A <mark>ARPANET</mark>, desenvolvida em 1969 pelo Departamento de Defesa dos EUA, foi a precursora da Internet,
-      conectando quatro universidades e permitindo a troca de informações entre computadores distantes. </p>
-   <p>O <mark>protocolo TCP/IP</mark>, desenvolvido nos anos 1970, tornou-se o padrão de comunicação da Internet,
-      permitindo a interconexão de redes heterogêneas.</p>
-   <p> Na década de 1980, a ARPANET cresceu rapidamente e o acesso à Internet tornou-se <mark>comercialmente
-         disponível</mark>.</p>
-   <p>A <mark><em>World Wide Web</em></mark>, criada nos anos 1990 por Tim Berners-Lee no CERN, popularizou a Internet
-      ao introduzir o conceito de hipertexto, navegadores e servidores web.</p>
-   <p> O <em>boom</em> da Internet no final da década de 1990 foi marcado pelo rápido crescimento de usuários,
-      investimentos e inovações, impulsionando o surgimento de empresas ponto-com. Desde então, a Internet continua a
-      evoluir, conectando bilhões de pessoas e dispositivos globalmente e dando origem a novas tecnologias e serviços,
-      como redes sociais, streaming de vídeo, computação em nuvem e <mark>Internet das Coisas (IoT)</mark>.</p>
+      <ul>
+         <li><strong>Primeira Geração (1940-1956):</strong></li>
+         <ul>
+            <li> Uso de válvulas e componentes mecânicos.</li>
+            <li><em><u>Exemplos:</em> ENIAC, Mark I e Colossus.</u></li>
+         </ul>
+         <br>
+         <li><strong>Segunda Geração (1956-1963):</strong></li>
+         <ul>
+            <li>Introdução do transistor;</li>
+            <li>Desenvolvimento da linguagem assembly.</li>
+            <li><u><em>Exemplos:</em>IBM 7090, IBM 1401.</u></li>
+         </ul>
+         <br>
+         <li><strong>Terceira Geração (1964-1971):</strong></li>
+         <ul>
+            <li>Surgimento dos circuitos integrados;</li>
+            <li>Desenvolvimento de sistemas operacionais.</li>
+            <li><u><em>Exemplos:</em> IBM System/360, DEC PDP-8.</u></li>
+         </ul>
+         <br>
+         <li><strong>Quarta Geração (1971-1989):</strong></li>
+         <ul>
+            <li>Introdução dos microprocessadores;</li>
+            <li>Surgimento dos computadores pessoais (PCs).</li>
+            <li><u><em>Exemplos:</em> IBM PC, Apple Macintosh.</u></li>
+         </ul>
+         <br>
+         <li><strong>Quinta Geração (1989-atualmente):</strong></li>
+         <ul>
+            <li>Avanços em inteligência artificial e processamento paralelo;</li>
+            <li>Surgimento da Internet e da <em>World Wide Web</em>;</li>
+            <li>Miniaturização contínua e dispositivos móveis;</li>
+            <li><u><em>Exemplos:</em> smartphones, supercomputadores.</u></li>
+         </ul>
+      </ul>
+   </font>
 
-   <h3 style="color: darkolivegreen;">Pessoas de destaque</h3>
-   <h4 style="color: goldenrod;">Grace Murray Hopper</h4>
+   <font face="Ubuntu">
+      <h3 style="color: darkolivegreen;">Internet</h3>
+   </font>
+
+   <font face="Cabin">
+      <p>Os telégrafos, que surgiram no século XIX, marcaram o início da comunicação instantânea à distância,
+         transmitindo
+         mensagens em <mark>código Morse</mark> através de fios elétricos.</p>
+      <p>A <mark>ARPANET</mark>, desenvolvida em 1969 pelo Departamento de Defesa dos EUA, foi a precursora da Internet,
+         conectando quatro universidades e permitindo a troca de informações entre computadores distantes. </p>
+      <p>O <mark>protocolo TCP/IP</mark>, desenvolvido nos anos 1970, tornou-se o padrão de comunicação da Internet,
+         permitindo a interconexão de redes heterogêneas.</p>
+      <p> Na década de 1980, a ARPANET cresceu rapidamente e o acesso à Internet tornou-se <mark>comercialmente
+            disponível</mark>.</p>
+      <p>A <mark><em>World Wide Web</em></mark>, criada nos anos 1990 por Tim Berners-Lee no CERN, popularizou a
+         Internet
+         ao introduzir o conceito de hipertexto, navegadores e servidores web.</p>
+      <p> O <em>boom</em> da Internet no final da década de 1990 foi marcado pelo rápido crescimento de usuários,
+         investimentos e inovações, impulsionando o surgimento de empresas ponto-com. Desde então, a Internet continua a
+         evoluir, conectando bilhões de pessoas e dispositivos globalmente e dando origem a novas tecnologias e
+         serviços,
+         como redes sociais, streaming de vídeo, computação em nuvem e <mark>Internet das Coisas (IoT)</mark>.</p>
+   </font>
+
+   <font face="Ubuntu">
+      <h3 style="color: darkolivegreen;">Pessoas de destaque</h3>
+      <h4 style="color: goldenrod;">Grace Murray Hopper</h4>
+   </font>
    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg"
       width="200px" alt="Grace Murray Hopper">
-   <ul>
-      <li>Uma das primeiras programadoras envolvidas no Mark I;</li>
-      <li>Responsável pelo uso e popularização do termo <em>bug</em> na computação.</li>
-   </ul>
 
-   <h4 style="color: goldenrod;">Joseph Carl Robnett Licklider</h4>
+   <font face="Cabin">
+      <ul>
+         <li>Uma das primeiras programadoras envolvidas no Mark I;</li>
+         <li>Responsável pelo uso e popularização do termo <em>bug</em> na computação.</li>
+      </ul>
+   </font>
+
+   <font face="Ubuntu">
+      <h4 style="color: goldenrod;">Joseph Carl Robnett Licklider</h4>
+   </font>
+
+
    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7jeIbKgL8WU6FuiwjJvWigZxjrUCJnKdJyozyYTCMg&s"
       width="200px" alt="Joseph Carl Robnett Licklider">
-   <ul>
-      <li>Teorizou a "rede galática de computadores".</li>
-      <li>Foi contratado pela DARPA após sua teoria ter sido desenvolvida.</li>
-   </ul>
 
-   <h4 style="color: goldenrod;">Robert Elliot Kahn</h4>
+   <font face="Cabin">
+      <ul>
+         <li>Teorizou a "rede galática de computadores".</li>
+         <li>Foi contratado pela DARPA após sua teoria ter sido desenvolvida.</li>
+      </ul>
+   </font>
+
+   <font face="Ubuntu">
+      <h4 style="color: goldenrod;">Robert Elliot Kahn</h4>
+   </font>
+
    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Bob_Kahn.jpg/800px-Bob_Kahn.jpg" width=200px
       alt="Robert Elliot Kahn">
-   <ul>
-      <li>Esteve na primeira apresentação pública da ARPANet;</li>
-      <li>Foi responsável pela apresentação do primeiro e-mail;</li>
-      <li>Criou o TCP/IP.</li>
-   </ul>
 
-   <h4 style="color: goldenrod;">Tim Berners-Lee</h4>
+   <font face="Cabin">
+      <ul>
+         <li>Esteve na primeira apresentação pública da ARPANet;</li>
+         <li>Foi responsável pela apresentação do primeiro e-mail;</li>
+         <li>Criou o TCP/IP.</li>
+      </ul>
+   </font>
+
+   <font face="Ubuntu">
+      <h4 style="color: goldenrod;">Tim Berners-Lee</h4>
+   </font>
+
    <img src="https://cdn.britannica.com/94/123894-050-53EC378E/Tim-Berners-Lee-2005.jpg" width="200px"
       alt="Tim Berners-Lee">
-   <ul>
-      <li>Criador do <em>World Wide Web</em>;</li>
-      <li>Diretor do <em>World Wide Web Consortion</em> (W3C);</li>
-      <li>Popularizou o HTTP e o HTML.</li>
-   </ul>
 
-   <h4 style="color: goldenrod;">Marc Andreessen</h4>
+   <font face="Cabin">
+      <ul>
+         <li>Criador do <em>World Wide Web</em>;</li>
+         <li>Diretor do <em>World Wide Web Consortion</em> (W3C);</li>
+         <li>Popularizou o HTTP e o HTML.</li>
+      </ul>
+   </font>
+
+   <font face="Ubuntu">
+      <h4 style="color: goldenrod;">Marc Andreessen</h4>
+   </font>
+
    <img src="https://media.newyorker.com/photos/59096d4cebe912338a3768f4/master/pass/150518_r26512.jpg" width="200px"
       alt="Marc Andreessen">
-   <ul>
-      <li>Criador do Netscape.</li>
-   </ul>
 
-   <h4 style="color: goldenrod;">Bill Gates</h4>
+   <font face="Cabin">
+      <ul>
+         <li>Criador do Netscape.</li>
+      </ul>
+   </font>
+
+   <font face="Ubuntu">
+      <h4 style="color: goldenrod;">Bill Gates</h4>
+   </font>
+
+
    <img src="https://ep01.epimg.net/estaticos/arc/2021/02/entrevista/img/bill.jpg" width="200px" alt="Bill Gates">
-   <ul>
-      <li>Fundador da Microsoft.</li>
-   </ul>
+   
+   <font face="Cabin">
+      <ul>
+         <li>Fundador da Microsoft.</li>
+      </ul>
+   </font>
 
-   <h4 style="color: goldenrod;">Steve Jobs</h4>
+   <font face="Ubuntu">
+      <h4 style="color: goldenrod;">Steve Jobs</h4>
+   </font>
+
    <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Steve_Jobs.jpg" width="200px" alt="Steve Jobs">
-   <ul>
-      <li>Fundador da Apple.</li>
-   </ul>
 
+   <font face="Cabin">
+      <ul>
+         <li>Fundador da Apple.</li>
+      </ul>
+   </font>
 
-   <h2 id="clients-servers" style="color: coral";>Clients vs Servers <sup><small><a href="#inicio">Voltar ao início</a></small></sup></h2>
+   <font face="Ubuntu">
+      <h2 id="clients-servers" style="color: coral" ;>Clients vs Servers <sup><small><a href="#inicio">Voltar ao
+                  início</a></small></sup></h2>
 
-   <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/1200px-Client-server-model.svg.png"
-      width="400px" alt="Diagrama Clients vs Servers">
+      <img
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/1200px-Client-server-model.svg.png"
+         width="400px" alt="Diagrama Clients vs Servers">
 
-   <h3 id="clients" style="color: darkolivegreen;">O que são <i>Clients</i>? <sup><small><a href="#inicio">Voltar ao início</a></small></sup></h3>
+      <h3 id="clients" style="color: darkolivegreen;">O que são <i>Clients</i>? <sup><small><a href="#inicio">Voltar ao
+                  início</a></small></sup></h3>
 
-   <h4 style="color: goldenrod;">Conceito de <em>Client</em></h4>
-   <p>Com a ajuda do diagrama acima, podemos identificar que, um <em>client</em> (cliente) é um dispositivo ou
-      <em>software</em> que solicita e recebe serviços, recursos ou informações de outro dispositivo ou
-      <em>software</em> chamado <em>server</em> (servidor). Os <em>clients</em> são componentes ativos em arquiteturas
-      de rede cliente-servidor.
-   </p>
+      <h4 style="color: goldenrod;">Conceito de <em>Client</em></h4>
+   </font>
+
+   <font face="Cabin">
+      <p>Com a ajuda do diagrama acima, podemos identificar que, um <em>client</em> (cliente) é um dispositivo ou
+         <em>software</em> que solicita e recebe serviços, recursos ou informações de outro dispositivo ou
+         <em>software</em> chamado <em>server</em> (servidor). Os <em>clients</em> são componentes ativos em
+         arquiteturas
+         de rede cliente-servidor.
+      </p>
+   </font>
+
    <br>
-   <h5 style="color: mediumseagreen;">Exemplos de <em>clients</em>:</h5>
-   <ul>
-      <li> Navegadores da Web (<em>browsers</em>);</li>
-      <p>Um navegador da web funciona seguindo os passos a seguir:</p>
-      <ol>
-         <li><strong>Requisição de URL:</strong> O usuário digita uma URL (Uniform Resource Locator) na barra de
-            endereços do navegador ou clica em um link.</li>
-         <li><strong>Resolução de DNS:</strong> O navegador verifica o sistema de nomes de domínio (DNS) para traduzir o
-            nome do domínio em um endereço IP correspondente.</li>
-         <li><strong>Solicitação HTTP:</strong> O navegador envia uma solicitação HTTP (Hypertext Transfer Protocol) ao
-            servidor web associado ao endereço IP obtido, solicitando os recursos da página web.</li>
-         <li><strong>Resposta do Servidor:</strong> O servidor web recebe a solicitação, processa-a e envia de volta ao
-            navegador uma resposta HTTP contendo os arquivos necessários para exibir a página web, como HTML, CSS,
-            JavaScript e mídia.</li>
-         <li><strong>Renderização da Página:</strong> O navegador recebe os arquivos e os interpreta para renderizar a
-            página web, exibindo-a na janela do navegador de acordo com as instruções de formatação fornecidas pelo HTML
-            e CSS.</li>
-         <li><strong>Execução de Scripts:</strong> Se houver scripts (geralmente JavaScript) na página, o navegador os
-            executa para adicionar interatividade e funcionalidades à página.</li>
-         <li><strong>Interação do Usuário:</strong> O usuário pode interagir com a página web clicando em links,
-            preenchendo formulários, rolando a página, entre outras ações.</li>
-         <li><strong>Requisições Adicionais:</strong> Se a página contiver recursos externos, como imagens, vídeos ou
-            scripts de terceiros, o navegador enviará solicitações adicionais ao servidor para obter esses recursos.
+
+   <font face="Ubuntu">
+      <h5 style="color: mediumseagreen;">Exemplos de <em>clients</em>:</h5>
+   </font>
+
+   <font face="Cabin">
+      <ul>
+         <li> Navegadores da Web (<em>browsers</em>);</li>
+         <p>Um navegador da web funciona seguindo os passos a seguir:</p>
+         <ol>
+            <li><strong>Requisição de URL:</strong> O usuário digita uma URL (Uniform Resource Locator) na barra de
+               endereços do navegador ou clica em um link.</li>
+            <li><strong>Resolução de DNS:</strong> O navegador verifica o sistema de nomes de domínio (DNS) para
+               traduzir o
+               nome do domínio em um endereço IP correspondente.</li>
+            <li><strong>Solicitação HTTP:</strong> O navegador envia uma solicitação HTTP (Hypertext Transfer Protocol)
+               ao
+               servidor web associado ao endereço IP obtido, solicitando os recursos da página web.</li>
+            <li><strong>Resposta do Servidor:</strong> O servidor web recebe a solicitação, processa-a e envia de volta
+               ao
+               navegador uma resposta HTTP contendo os arquivos necessários para exibir a página web, como HTML, CSS,
+               JavaScript e mídia.</li>
+            <li><strong>Renderização da Página:</strong> O navegador recebe os arquivos e os interpreta para renderizar
+               a
+               página web, exibindo-a na janela do navegador de acordo com as instruções de formatação fornecidas pelo
+               HTML
+               e CSS.</li>
+            <li><strong>Execução de Scripts:</strong> Se houver scripts (geralmente JavaScript) na página, o navegador
+               os
+               executa para adicionar interatividade e funcionalidades à página.</li>
+            <li><strong>Interação do Usuário:</strong> O usuário pode interagir com a página web clicando em links,
+               preenchendo formulários, rolando a página, entre outras ações.</li>
+            <li><strong>Requisições Adicionais:</strong> Se a página contiver recursos externos, como imagens, vídeos ou
+               scripts de terceiros, o navegador enviará solicitações adicionais ao servidor para obter esses recursos.
+            </li>
+            <li><strong>Armazenamento em Cache:</strong> O navegador pode armazenar em cache alguns dos recursos da
+               página
+               para acelerar o carregamento subsequente da mesma página ou de páginas relacionadas.</li>
+            <li><strong>Atualizações e Eventos:</strong> O navegador continua a monitorar a página para atualizações,
+               como
+               alterações no conteúdo ou eventos do usuário, e responde a esses eventos de acordo.</li>
+         </ol>
+         <br>
+         <li>Aplicações Web;</li>
+         <br>
+         <li>Dispositivos móveis.</li>
+      </ul>
+   </font>
+
+   <font face="Ubuntu">
+      <h3 style="color: darkolivegreen;">Linguagens <em>client-side</em></h3>
+   </font>
+
+   <font face="Cabin">
+      <ul>
+         <li>PHP;</li>
+         <li>Ruby;</li>
+         <li>JavaScript;</li>
+         <li>Java;</li>
+         <li>C#.</li>
+      </ul>
+   </font>
+
+   <br>
+
+   <font face="Ubuntu">
+      <h3 id="servers" style="color: darkolivegreen;">O que são <i>Servers</i>? <sup><small><a href="#inicio">Voltar ao
+                  início</a></small></sup></h3>
+
+      <h4 style="color: goldenrod;">Conceito de <em>servers</em></h4>
+   </font>
+
+   <font face="Cabin">
+      <p>Em tecnologia da informação e redes de computadores, um <em>server</em> é um dispositivo de <em>hardware</em>
+         ou
+         <em>software</em> que fornece serviços, recursos ou informações a outros dispositivos ou <em>softwares</em>
+         chamados <em>clients</em>. Os servidores são projetados para atender solicitações de clientes e fornecer acesso
+         a
+         recursos compartilhados de forma eficiente e confiável.
+      </p>
+   </font>
+
+   <font face="Ubuntu">
+      <h3 style="color: darkolivegreen;">Linguagens <em>server-side</em></h3>
+   </font>
+
+   <font face="Cabin">
+      <ul>
+         <li>JavaScript;</li>
+         <li>TypeScript;</li>
+         <li>Dart;</li>
+         <li>WebAssembly (Wasm).</li>
+      </ul>
+   </font>
+
+   <br>
+
+   <font face="Ubuntu">
+      <h5 style="color: mediumseagreen;"><u><em></em>SOFTWARES</em> E <em>HARDWARES</em></u></h5>
+   </font>
+
+   <font face="Cabin">
+      <p>Enquanto o hardware se refere aos componentes físicos do servidor, o software consiste nos programas e sistemas
+         operacionais que permitem aos servidores executar serviços, aplicativos e cargas de trabalho específicos. Ambos
+         desempenham papéis fundamentais na criação e operação de infraestruturas de servidor eficazes.</p>
+   </font>
+
+   <font face="Ubuntu">
+      <h6 style="color: indianred;"><strong><u>SOFTWARES:</u></strong></h6>
+   </font>
+
+   <font face="Cabin">
+      <h6>Sistemas operacionais como o Windows Server, Ubuntu, CentOS, Fedora, etc;</h6>
+      <h6>Monitoramento (Nagios, Zabbix, etc);</h6>
+      <h6>Servidores web como Apache ou Nginx.</h6>
+   </font>
+
+   <font face="Ubuntu">
+      <h6 style="color: indianred;"><strong><u>HARDWARES:</u></strong></h6>
+   </font>
+
+   <font face="Cabin">
+      <h6>Armazenamento (disco rígido, SSDs);</h6>
+      <h6>Memória;</h6>
+      <h6>Processadores.</h6>
+   </font>
+
+   <br>
+
+   <font face="Ubuntu">
+      <h2 id="estrutura-html" style="color: coral">Como é uma estrutura básica de um HTML? <sup><small><a
+                  href="#inicio">Voltar ao
+                  início</a></small></sup></h2>
+   </font>
+
+   <font face="Cabin">
+      <p>A estrutura básica de um documento HTML (Hypertext Markup Language) consiste nos elementos fundamentais
+         necessários para definir a estrutura e o conteúdo de uma página da web. Aqui está um exemplo da estrutura
+         básica
+         de um documento HTML:</p>
+
+      <img src="https://www.juliobattisti.com.br/tutoriais/davidoliveira/frontpagebasico002_clip_image010.jpg"
+         width="400px" alt="Estrutura básica HTML">
+
+      <ul>
+         <li><strong>!DOCTYPE html:</strong> Declara o tipo de documento e define que o documento é um HTML5.</li>
+         <li><strong>html:</strong> É o elemento raiz que engloba todo o conteúdo da página.</li>
+         <li><strong>head:</strong> Contém metadados sobre o documento, como o conjunto de caracteres, as tags de
+            metadados
+            (como meta), links para folhas de estilo (como link), scripts (como script), título da página (como title),
+            entre outros.</li>
+         <li><strong>title:</strong> Define o título da página, que é exibido na aba do navegador ou na janela do
+            navegador.</li>
+         <li><strong>body:</strong> Contém todo o conteúdo visível da página, como texto, imagens, vídeos, formulários,
+            etc. Este é o local onde a maioria do conteúdo da página é colocado.</li>
+      </ul>
+   </font>
+
+   <font face="Ubuntu">
+      <h3 style="color: darkolivegreen;">Atributos de Tags</h3>
+   </font>
+
+   <font face="Cabin">
+      <p>Em HTML, os atributos de tags são usados para fornecer informações adicionais sobre os elementos HTML e
+         especificar configurações ou comportamentos específicos. Eles são definidos dentro das tags e têm o formato
+         nome="valor". Aqui estão alguns exemplos de atributos de tags HTML e suas descrições:</p>
+      <ul>
+         <li><strong>id:</strong> Define um identificador único para o elemento. É usado para selecionar o elemento via
+            JavaScript ou CSS.</li>
+         <li><strong>class:</strong> Define uma ou mais classes para o elemento. É usado para aplicar estilos CSS
+            específicos ou selecionar o elemento via JavaScript.</li>
+         <li><strong>src:</strong> Especifica o caminho do arquivo de origem para elementos como imagens, áudio ou
+            vídeo.
          </li>
-         <li><strong>Armazenamento em Cache:</strong> O navegador pode armazenar em cache alguns dos recursos da página
-            para acelerar o carregamento subsequente da mesma página ou de páginas relacionadas.</li>
-         <li><strong>Atualizações e Eventos:</strong> O navegador continua a monitorar a página para atualizações, como
-            alterações no conteúdo ou eventos do usuário, e responde a esses eventos de acordo.</li>
-      </ol>
+         <li><strong>href:</strong> Especifica o URL de destino para links (a) e âncoras.</li>
+         <li><strong>style:</strong> Define estilos CSS inline para o elemento.</li>
+         <li><strong>target:</strong> Especifica onde abrir o link quando clicado (por exemplo, em uma nova janela ou na
+            mesma janela).</li>
+         <li><strong>title:</strong> Fornecer um título ou dica de ferramenta para elementos. Quando o mouse passa sobre
+            o
+            elemento, o título é exibido.</li>
+      </ul>
+   </font>
+
+   <font face="Ubuntu">
+      <h3 style="color: darkolivegreen;">Listas ordenadas e não ordenadas</h3>
+      <h4 style="color: goldenrod;">No HTML, há dois tipos principais de listas: listas ordenadas (ol) e listas não
+         ordenadas (ul)</h4>
+   </font>
+
+   <font face="Cabin">
+      <p>As listas ordenadas (ol) são utilizadas para apresentar itens em uma sequência específica, onde cada item é
+         numerado ou marcado de acordo com sua posição na lista.</p>
+      <p>Os itens são exibidos com um marcador numérico ou alfabético por padrão, mas podem ser personalizados usando o
+         atributo type.</p>
+      <p> Os elementos de lista são definidos com a tag "li" (<em>list item</em> ou item de lista).</p>
+      <img
+         src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaOMfGnR3Z8pMIBbqwzoJ1O1fIMrueUhT-uIXwWEwsv4R00RlejI2ACQ3LVv8V9mpF7u-mrNi1FXF97V5Jarav75f2NCUK3UNTn1Z8ZLArk4Tt0BLLLnSP4fLX190k6yUadvHa4YKpX9QC/w1200-h630-p-k-no-nu/lista-ordenada-html.jpg"
+         width="400px" alt="Exemplo de lista ordenada no HTML">
       <br>
-      <li>Aplicações Web;</li>
+
+      <p>Já as listas não ordenadas são utilizadas para apresentar itens em uma sequência sem uma ordem específica, onde
+         cada item é marcado com um símbolo de <em>bullet</em> por padrão.</p>
+      <p>Os elementos de lista são definidos com a tag "li", assim como nas listas ordenadas.</p>
+      <p>As listas não ordenadas são frequentemente utilizadas para representar menus de navegação, listas de itens ou
+         qualquer conjunto de informações onde a ordem não é relevante.</p>
+      <img
+         src="https://image.slidesharecdn.com/aula5-141124154058-conversion-gate02/85/aula5-listas-html-5-3-320.jpg?cb=1671639939"
+         width="400px" alt="Exemplo de lista não ordenada no HTML">
       <br>
-      <li>Dispositivos móveis.</li>
-   </ul>
-   <h3 style="color: darkolivegreen;">Linguagens <em>client-side</em></h3>
-   <ul>
-      <li>PHP;</li>
-      <li>Ruby;</li>
-      <li>JavaScript;</li>
-      <li>Java;</li>
-      <li>C#.</li>
-   </ul>
-   <br>
+   </font>
 
-   <h3 id="servers" style="color: darkolivegreen;">O que são <i>Servers</i>? <sup><small><a href="#inicio">Voltar ao início</a></small></sup></h3>
+   <font face="Ubuntu">
+      <h2 id="referencias" style="color: coral">Referências <sup><small><a href="#inicio">Voltar ao
+                  início</a></small></sup></h2>
+   </font>
 
-   <h4 style="color: goldenrod;">Conceito de <em>servers</em></h4>
-   <p>Em tecnologia da informação e redes de computadores, um <em>server</em> é um dispositivo de <em>hardware</em> ou
-      <em>software</em> que fornece serviços, recursos ou informações a outros dispositivos ou <em>softwares</em>
-      chamados <em>clients</em>. Os servidores são projetados para atender solicitações de clientes e fornecer acesso a
-      recursos compartilhados de forma eficiente e confiável.
-   </p>
-
-   <h3 style="color: darkolivegreen;">Linguagens <em>server-side</em></h3>
-   <ul>
-      <li>JavaScript;</li>
-      <li>TypeScript;</li>
-      <li>Dart;</li>
-      <li>WebAssembly (Wasm).</li>
-   </ul>
-   <br>
-
-   <h5 style="color: mediumseagreen;"><u><em></em>SOFTWARES</em> E <em>HARDWARES</em></u></h5>
-   <p>Enquanto o hardware se refere aos componentes físicos do servidor, o software consiste nos programas e sistemas
-      operacionais que permitem aos servidores executar serviços, aplicativos e cargas de trabalho específicos. Ambos
-      desempenham papéis fundamentais na criação e operação de infraestruturas de servidor eficazes.</p>
-   <h6 style="color: indianred;"><strong><u>SOFTWARES:</u></strong></h6>
-   <h6>Sistemas operacionais como o Windows Server, Ubuntu, CentOS, Fedora, etc;</h6>
-   <h6>Monitoramento (Nagios, Zabbix, etc);</h6>
-   <h6>Servidores web como Apache ou Nginx.</h6>
-
-   <h6 style="color: indianred;"><strong><u>HARDWARES:</u></strong></h6>
-   <h6>Armazenamento (disco rígido, SSDs);</h6>
-   <h6>Memória;</h6>
-   <h6>Processadores.</h6>
-   <br>
-
-   <h2 id="estrutura-html" style="color: coral">Como é uma estrutura básica de um HTML? <sup><small><a href="#inicio">Voltar ao
-               início</a></small></sup></h2>
-   <p>A estrutura básica de um documento HTML (Hypertext Markup Language) consiste nos elementos fundamentais
-      necessários para definir a estrutura e o conteúdo de uma página da web. Aqui está um exemplo da estrutura básica
-      de um documento HTML:</p>
-
-   <img src="https://www.juliobattisti.com.br/tutoriais/davidoliveira/frontpagebasico002_clip_image010.jpg"
-      width="400px" alt="Estrutura básica HTML">
-
-   <ul>
-      <li><strong>!DOCTYPE html:</strong> Declara o tipo de documento e define que o documento é um HTML5.</li>
-      <li><strong>html:</strong> É o elemento raiz que engloba todo o conteúdo da página.</li>
-      <li><strong>head:</strong> Contém metadados sobre o documento, como o conjunto de caracteres, as tags de metadados
-         (como meta), links para folhas de estilo (como link), scripts (como script), título da página (como title),
-         entre outros.</li>
-      <li><strong>title:</strong> Define o título da página, que é exibido na aba do navegador ou na janela do
-         navegador.</li>
-      <li><strong>body:</strong> Contém todo o conteúdo visível da página, como texto, imagens, vídeos, formulários,
-         etc. Este é o local onde a maioria do conteúdo da página é colocado.</li>
-   </ul>
-
-   <h3 style="color: darkolivegreen;">Atributos de Tags</h3>
-   <p>Em HTML, os atributos de tags são usados para fornecer informações adicionais sobre os elementos HTML e
-      especificar configurações ou comportamentos específicos. Eles são definidos dentro das tags e têm o formato
-      nome="valor". Aqui estão alguns exemplos de atributos de tags HTML e suas descrições:</p>
-   <ul>
-      <li><strong>id:</strong> Define um identificador único para o elemento. É usado para selecionar o elemento via
-         JavaScript ou CSS.</li>
-      <li><strong>class:</strong> Define uma ou mais classes para o elemento. É usado para aplicar estilos CSS
-         específicos ou selecionar o elemento via JavaScript.</li>
-      <li><strong>src:</strong> Especifica o caminho do arquivo de origem para elementos como imagens, áudio ou vídeo.
-      </li>
-      <li><strong>href:</strong> Especifica o URL de destino para links (a) e âncoras.</li>
-      <li><strong>style:</strong> Define estilos CSS inline para o elemento.</li>
-      <li><strong>target:</strong> Especifica onde abrir o link quando clicado (por exemplo, em uma nova janela ou na
-         mesma janela).</li>
-      <li><strong>title:</strong> Fornecer um título ou dica de ferramenta para elementos. Quando o mouse passa sobre o
-         elemento, o título é exibido.</li>
-   </ul>
-
-   <h3 style="color: darkolivegreen;">Listas ordenadas e não ordenadas</h3>
-   <h4 style="color: goldenrod;">No HTML, há dois tipos principais de listas: listas ordenadas (ol) e listas não ordenadas (ul)</h4>
-   <p>As listas ordenadas (ol) são utilizadas para apresentar itens em uma sequência específica, onde cada item é
-      numerado ou marcado de acordo com sua posição na lista.</p>
-   <p>Os itens são exibidos com um marcador numérico ou alfabético por padrão, mas podem ser personalizados usando o
-      atributo type.</p>
-   <p> Os elementos de lista são definidos com a tag "li" (<em>list item</em> ou item de lista).</p>
-   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaOMfGnR3Z8pMIBbqwzoJ1O1fIMrueUhT-uIXwWEwsv4R00RlejI2ACQ3LVv8V9mpF7u-mrNi1FXF97V5Jarav75f2NCUK3UNTn1Z8ZLArk4Tt0BLLLnSP4fLX190k6yUadvHa4YKpX9QC/w1200-h630-p-k-no-nu/lista-ordenada-html.jpg" 
-   width="400px"
-   alt="Exemplo de lista ordenada no HTML">
-   <br>
-
-   <p>Já as listas não ordenadas são utilizadas para apresentar itens em uma sequência sem uma ordem específica, onde
-      cada item é marcado com um símbolo de <em>bullet</em> por padrão.</p>
-   <p>Os elementos de lista são definidos com a tag "li", assim como nas listas ordenadas.</p>
-   <p>As listas não ordenadas são frequentemente utilizadas para representar menus de navegação, listas de itens ou
-      qualquer conjunto de informações onde a ordem não é relevante.</p>
-      <img src="https://image.slidesharecdn.com/aula5-141124154058-conversion-gate02/85/aula5-listas-html-5-3-320.jpg?cb=1671639939" 
-      width="400px"
-      alt="Exemplo de lista não ordenada no HTML">
-   <br>
-
-
-   <h2 id="referencias" style="color: coral">Referências <sup><small><a href="#inicio">Voltar ao início</a></small></sup></h2>
-
-   <ul>
-      <li><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></li>
-      <li><a href="https://developer.mozilla.org/pt-BR/">MDN</a></li>
-      <li><a href="https://www.youtube.com/watch?v=3oSIqIqzN3M">Rafaella Ballerini</a></li>
-      <li><a href="https://open.spotify.com/show/2kCrTjsGn431qiGpl9quAl">Dev em Dobro</a></li>
-   </ul>
-
+   <font face="Cabin">
+      <ul>
+         <li><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></li>
+         <li><a href="https://developer.mozilla.org/pt-BR/">MDN</a></li>
+         <li><a href="https://www.youtube.com/watch?v=3oSIqIqzN3M">Rafaella Ballerini</a></li>
+         <li><a href="https://open.spotify.com/show/2kCrTjsGn431qiGpl9quAl">Dev em Dobro</a></li>
+      </ul>
+   </font>
+   
 </body>
 
 </html>
